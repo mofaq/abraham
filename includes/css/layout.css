@@ -6,17 +6,20 @@ a{color:#6C7BD0;}
 .left{float:left;}
 .right{float:right;}
 .clear{clear:both}
+.hidden{display:none;}
 
 .white{color:white}
 .pop{font-size:11px;font-weight:bold;color:white;border:1px solid #2d3a8b;background-color:#2d3a8b;height:32px;width:32px;border-radius:32px;}
 
+.hover{background-color:pink;}
+
 
 #toolbar{width:100%;height:29px;line-height:29px;background-color:#2d3a8b;color:white}
 #toolbar b.language_filter{color:white}
-.toolbar-inner{margin:0 32px;font-size:11px;}
+.toolbar-inner{margin:0 24px;font-size:11px;}
 
 #header{width:100%;height:71px;line-height:71px; overflow:hidden;background-color:#6c7bd0;color:white;}
-.header-inner{margin:0 32px;}
+.header-inner{margin:0 24px;font-family:impact, 'arial narrow';font-size:2.2em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:uppercase;}
 
 .logo{font-family:impact, 'arial narrow';margin:0 0 0 24px;padding:0;line-height:71px;height:71px;width:356px;font-size:2.2em;font-weight:normal;letter-spacing:-2px;color:white;text-transform:uppercase;}
 .search{height:71px;}
@@ -24,7 +27,7 @@ a{color:#6C7BD0;}
 #content{overflow:hidden;}
 
 #panel{position:absolute;z-index:5;float:left;background-color:#fefefe;width:381px;border-right:1px solid white;-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);}
-.panel-header{padding:16px 8px 0 24px; height:44px;min-width:222px;line-height:32px;border-bottom:1px solid gainsboro;}
+.panel-header{padding:16px 8px 0 24px; height:49px;min-width:222px;line-height:49px;border-bottom:1px solid gainsboro;}
 .panel-container{padding:8px 0 0 0;margin:0;}
 
 .panel-footer{font-size:0.7em;color:#6C7BD0;}

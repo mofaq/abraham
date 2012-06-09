@@ -14,8 +14,8 @@ var address = [
 ];
 var overlayContent = "<div class='result-item' style='padding:0'>" +
                         "<div class='right'>" +
-                          "<a href='#'>Lorem ipsum dolor sit amet</a><br>" +
-                          "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna." +
+                          "<a href='#'>The name of the school</a><br>" +
+                          "This is a meaningful sentence to help the translator tool somewhat.." +
                         "</div>" +
                         "<div class='right'>" +
                           "<b>Something: " + address[0] + "</b>" +
@@ -24,12 +24,23 @@ var overlayContent = "<div class='result-item' style='padding:0'>" +
 
 /*Some simple sizing stuff*/
 
+
+
+
 jQuery.event.add(window, "load", resizeFrame1);
 jQuery.event.add(window, "load", setDefaultsLtr);
 jQuery.event.add(window, "load", panelHeight);
 
 jQuery.event.add(window, "resize", resizeFrame1);
 jQuery.easing.def = "easeOutBounce";
+
+$(document).ready(function() {
+  $('ol.inner-results li').hover(
+function(){$(this).addClass('hover')},
+function(){$(this).removeClass('hover')}
+)
+});
+
 
 
 
@@ -89,6 +100,8 @@ function setDefaultsLtr()
   $(".language_filter").text('Language')
   $(".country_filter").text('Country')
   $(".language_filter").tooltip();
+
+
 }
 
 function setDefaultsRtl()
@@ -171,7 +184,7 @@ function markerSwap(uuid){
 }
 
 $(document).ready(function() {
-  $('a.add').click(function(ev){
+  $('a.add').on().click(function(ev){
       ev.preventDefault();
       var uuid = uuidGen();
       var lat = decimalCoord(LAT_MIN,LAT_MAX);
@@ -408,9 +421,8 @@ $(document).ready(function() {
 	$("#map_canvas").animate({width:w-(381+256)},700);
 	$("#map_canvas").css({width:w-(381+256)});
 
+  //$("#language-list div.panel-container").load("./_language_list.html");
 	//resizeFrame2();
-	//initMap();
-/*$("#panel").animate({"marginLeft": "-=340px"}, "fast");*/
   });
 });
 
@@ -448,6 +460,9 @@ $(document).ready(function() {
     $("h3.country-out").addClass('selected');
 	  $("#map_canvas").animate({width:w-(381+256)},700);
 	  $("#map_canvas").css({width:w-(381+256)});
+
+    $("#country-list div.panel-container").load("./_country_list.html");
+
 	  //resizeFrame2();
 	  //initMap();
   /*$("#panel").animate({"marginLeft": "-=340px"}, "fast");*/

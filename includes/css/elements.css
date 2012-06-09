@@ -4,6 +4,9 @@
 .primary-option#lang_3 {background-image:url("flags/de.png");background-repeat:no-repeat;}
 */
 
+
+
+
 body{color:#111111;}
 
 h3{height:32px;line-height:32px;padding:0 8px 0 24px;margin:0}
@@ -48,8 +51,8 @@ li.secondary-seperator{background:gainsboro;height:4px;margin:8px;}
 .action a{font-weight:bold;color:#6C7BD0;}
 
 
-.result-item{padding:0 24px;margin:0 0 4px 0;width:296px;background-color:white;height:64px;overflow:hidden;}
-.result-item:hover{padding:0 24px;margin:0 0 4px 0;width:296px;background-color:#efefef;height:64px;overflow:hidden;cursor:pointer;}
+.result-item{padding:0 24px;margin:0 0 4px 0;width:296px;height:64px;overflow:hidden;}
+.result-item:hover{padding:0 24px;margin:0 0 4px 0;width:296px;height:64px;overflow:hidden;cursor:pointer;}
 .result-item{font-size:12px;}
 .result-item a{font-size:12px;font-weight:bold;text-decoration:none}
 
@@ -72,7 +75,7 @@ button.country-out{height:28px;border:2px solid white;margin:0 4px;padding:4px;b
 .destination-out{color:silver;margin-right:8px;}
 
 button.panel-in{height:28px;border:2px solid silver;padding:4px;border-radius:3px;width:28px;background-color:white;color:silver;font-weight:bold;}
-button.panel-button{height:31px;border:2px solid white;background-color:silver;border-radius:6px;color:white;padding:0 8px;margin:0 2px;}
+button.panel-button{height:31px;border:2px solid white;background-color:silver;border-radius:6px;padding:2px 8px;margin:0 4px 0 0;}
 button.panel-in2{height:40px;border:3px solid #e49501;margin:16px 12px;padding:4px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
 button.panel-in3{height:40px;border:3px solid #e49501;margin:16px 12px;padding:4px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
 
@@ -111,7 +114,7 @@ button.search-button{height:40px;border:3px solid white;margin:16px 12px;padding
 
 min-width: 128px;
 
-
+color:white;
 text-shadow: -1px -1px 1px #6C7BD0,1px 1px 1px #242495;
 background: #6C7BD0;
 background: -moz-linear-gradient(top, #6C7BD0 0%, #4355bc 49%, #F60 #6C7BD0, #6C7BD0 100%);
@@ -123,6 +126,22 @@ cursor: pointer;
 -webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
 -moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
 }
+
+.remove{
+text-shadow: -1px -1px 1px #ffffff,1px 1px 1px #eeeeee;
+background: #6C7BD0;
+background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6C7BD0), color-stop(49%,#4355bc), color-stop(51%,#6C7BD0), color-stop(100%,#828ed7));
+background: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+background: linear-gradient(top, #6C7BD0 0%,#ffffff 50%,#242495 60%,#6C7BD0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6C7BD0', endColorstr='#6C7BD0',GradientType=0 );
+cursor: pointer;
+-webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+-moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+color:silver;
+}
+
+a.remove{color:silver;}
 
 a.add{color:white;text-decoration:none;font-size:14px;}
 
