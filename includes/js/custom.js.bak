@@ -1,0 +1,39 @@
+/*Some simple sizing stuff*/
+
+jQuery.event.add(window, "load", resizeFrame);
+jQuery.event.add(window, "resize", resizeFrame);
+
+
+function resizeFrame() 
+{
+	var hmod = 130
+	var wmod = 381
+	var h = $(window).height();
+    var w = $(window).width();
+    $("#content").css('height',(h - hmod));
+    $("#panel").css('height',(h - hmod));
+    $("#map").css('height',(h - hmod));
+	$("#map").css('width', (w - wmod));
+	$("b").text('content container height:' + (h-hmod) + ' width:' + (w));
+}
+
+
+/*$(document).ready(function(){
+
+	$(".toggle").click(function(){
+	  $("#panel").slideToggle("slow");
+	  $(this).toggleClass("active");
+	});
+	
+});*/
+
+$(document).ready(function() {
+  $('button').click(function() {
+    var $marginLefty = $('#panel');
+    $marginLefty.animate({
+      marginLeft: parseInt($marginLefty.css('marginRight'),10) == 0 ?
+        $marginLefty.outerWidth() :
+        0
+    });
+  });
+});

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>CourseFinder Index</title>
+	<meta name="generator" content="editplus" />
+	<meta name="author" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- styles seperated for convenience -->
+	<link href=".\includes\css\layout.css" media='screen' rel='stylesheet' type='text/css' /> 
+	<link href=".\includes\css\elements.css" media='screen' rel='stylesheet' type='text/css' /> 
+	<link href="/includes/css/colours.css" media='screen' rel='stylesheet' type='text/css' /> 
+	<!-- jscript -->
+	<script src=".\includes\js\jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src=".\includes\js\custom.js" type="text/javascript"></script>
+ </head>
+
+<body>
+<div id="toolbar">x</div>
+<div id="header">
+	<div id="logo">
+		Abraham
+	</div>
+	<div id="search">
+		<input class="standard_input" />
+	</div>
+</div>
+<div id="content">
+		<div class="toggle"><button>click</button></div>
+	<div id="panel">
+
+
+		Panel
+	</div>
+	<!--div id="map">
+	</div--!>
+</div>
+<div id="footer"><div class="footer-inner"><b></b></div></div>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
