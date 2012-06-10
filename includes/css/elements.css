@@ -9,8 +9,12 @@
 
 body{color:#111111;}
 
-h3{height:32px;line-height:32px;padding:0 8px 0 24px;margin:0}
-h3:hover{background-color:#efefef;cursor:pointer;}
+
+.selected{background-color:pink;}
+
+.inner-header ul{padding:0;list-style-type:none;}
+.inner-header li{height:32px;line-height:32px;padding:0 8px 0 24px;margin:0}
+.inner-header li:hover{cursor:pointer;}
 
 
 .modify_link{color:#e49501;text-decoration:underline;}
@@ -40,7 +44,7 @@ li.primary-seperator{background:gainsboro;height:4px;margin:8px;}
 .secondary-option{font-size:1em;display:block;height:32px;line-height:24px;padding:0 8px 0 20px;opacity:0.5;}
 .secondary-option.selected{display:block;line-height:24px;font-weight:bold;opacity:1;}
 
-.country-list{list-style-type:none;padding:0;border-right:1px solid gainsboro;height:auto;}
+
 li.secondary-option{display:block;border:1px solid #fefefe;height:32px;}
 li.secondary-option:hover{background:gainsboro;cursor:pointer;}
 li.secondary-seperator{background:gainsboro;height:4px;margin:8px;}
@@ -69,7 +73,7 @@ button.language-out{height:28px;border:2px solid white;margin:0 4px;padding:4px;
 button.country-out{height:28px;border:2px solid white;margin:0 4px;padding:4px;border-radius:3px;background-color:#fec65d;color:white;font-weight:bold;}
 
 .language-out{color:silver;margin-right:8px;}
-.selected{color:#242495;background-color:#efefef;}
+
 
 .country-out{color:silver;margin-right:8px;}
 .destination-out{color:silver;margin-right:8px;}
@@ -143,12 +147,12 @@ color:silver;
 
 a.remove{color:silver;}
 
-a.add{color:white;text-decoration:none;font-size:14px;}
+a.add{color:white;text-decoration:none;}
 
 .inner-button {
 cursor: pointer;
 text-shadow: -1px -1px 2px #6C7BD0,1px 1px 2px #242495;
-font-size: 1.2em;
+
 padding: 8px 16px;
 margin: 0;
 border-radius: 8px;
@@ -159,8 +163,7 @@ border-top: 2px solid white;
 border-left: 2px solid white;
 border-bottom: 2px solid white;
 border-right: 2px solid white;
-height: 48px;
-line-height: 36px;
+
 
 }
 

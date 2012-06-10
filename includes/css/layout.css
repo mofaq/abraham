@@ -35,11 +35,9 @@ a{color:#6C7BD0;}
 .inner-header{padding:0;width:308px;}
 
 #language-list{width:256px;position:absolute;z-index:4;}
-.language-list{width:256px;border-right:1px solid #dcdcdc;}
 #country-list{width:256px;position:absolute;z-index:3;}
-.country-list{width:256px;border-right:1px solid #dcdcdc;}
 #destination-list{width:256px;position:absolute;z-index:2;}
-.destination-list{width:256px;border-right:1px solid #dcdcdc;}
+
 
 
 .toggle{height:32px;line-height:28px;min-width:222px}
