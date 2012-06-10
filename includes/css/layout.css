@@ -14,9 +14,9 @@ a{color:#6C7BD0;}
 .hover{background-color:pink;}
 
 
-#toolbar{width:100%;height:29px;line-height:29px;background-color:#2d3a8b;color:white}
+#toolbar{width:100%;height:24px;line-height:25px;background-color:white;color:#2d3a8b;font-size:11px;}
 #toolbar b.language_filter{color:white}
-.toolbar-inner{margin:0 24px;font-size:11px;}
+.toolbar-inner{margin:0 24px;}
 
 #header{width:100%;height:71px;line-height:71px; overflow:hidden;background-color:#6c7bd0;color:white;}
 .header-inner{margin:0 24px;font-family:impact, 'arial narrow';font-size:2.2em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:uppercase;}

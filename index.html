@@ -29,17 +29,8 @@
 <input type="hidden" name="language-filter" value="language"/>
 <input type="hidden" name="country-filter" value="country"/>
 </div>
-<!---->
-<div id="toolbar">
-  <div class="toolbar-inner" style="float:left;">
-    Something significant here...
-  </div>
-  <div class="toolbar-inner" style="float:left;">
-    Direction:
-		<button class="ltr">LTR</button>
-		<button class="rtl">RTL</button>
-  </div>
-<div id="google_translate_element" class="right" style="background-color:black;"></div><script>
+
+<div id="google_translate_element" class="right" style="background-color:white;top:32px;"></div><script>
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
@@ -47,12 +38,26 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<!---->
+<div id="toolbar">
+  <div class="toolbar-inner" style="float:left;">
+    Something significant here...
+  </div>
+  <div class="toolbar-inner right">
+    Direction:
+		<button class="ltr remove">LTR</button>
+		<button class="rtl remove">RTL</button>
+  </div>
+
 </div>
 <!---->
 <div id="header" dir="null">
   <div class="header-inner">  
 	  <a href="index.html" style="color:white;text-decoration:none;"><c>SLAVE</c><span style="color:#000000"><c style="opacity:0.25;">BIKINI</c></span></a>
   </div>
+
 </div>
 
 <div id="content" dir="null">
@@ -78,7 +83,7 @@ function googleTranslateElementInit() {
                   <b class="language_filter"></b><b class="right marker">&gt;</b>
                 </li>
                 <li class="country-list" onclick="panelOpen('country-list',256);">
-                  <b class="country_filter"></b><b class="right marker">&gt;</b>
+                  <b class="country_filter"></b><b class="right mark">&gt;</b>
                 </li>
                 <li class="destination-list" onclick="panelOpen('destination-list',256);">
                   <b class="other-filter">Destinations...</b><span class="right"><b>&gt;</b></span>
