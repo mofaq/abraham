@@ -45,8 +45,8 @@ function(){$(this).removeClass('hover')}
 $(document).ready(function() {
   $('.inner-header li').hover(
 
-function(){$(this).animate({ backgroundColor: "#efefef" }, "fast")},
-function(){$(this).animate({ backgroundColor: "white" }, "slow")}
+function(){$(this).stop().animate({ backgroundColor: "#efefef" }, "fast")},
+function(){$(this).stop().animate({ backgroundColor: "white" }, "slow")}
 );
 
 });
@@ -54,8 +54,8 @@ function(){$(this).animate({ backgroundColor: "white" }, "slow")}
 $(document).ready(function() {
   $('li.primary-option ').hover(
 
-function(){$(this).animate({ backgroundColor: "#b0b9e6" }, 200)},
-function(){$(this).animate({ backgroundColor: "white" }, 800)}
+function(){$(this).stop().animate({ backgroundColor: "#b0b9e6" }, 1)},
+function(){$(this).stop().animate({ backgroundColor: "white" }, 800)}
 
 );
 
@@ -136,12 +136,15 @@ function setDefaultsLtr()
 	$("#panels").css('float','left');
 	$("#language-list").css('float','left').css('display','none');
 	$("#country-list").css('float','left').css('display','none');
-	$("#destination-list").css('float','left').css('display','none');
+	$("#city-list").css('float','left').css('display','none');
+	$("#more-list").css('float','left').css('display','none');
 	$(".logo").css('float','left');
 	$(".search").css('float','left');
 	$(".choose").css('float','left');
   $(".language_filter").text('Language')
   $(".country_filter").text('Country')
+  $(".city_filter").text('City')
+  $(".more_filter").text('More options...')
   $(".language_filter").tooltip();
 
 
@@ -315,6 +318,12 @@ function resizeFrame1()
   $("#destination-list").css('width',(wselector));
   $("#destination-list").css('margin-left',(wmod));
   $("#destination-list").css('height',(h - hmod));
+  $("#city-list").css('width',(wselector));
+  $("#city-list").css('margin-left',(wmod));
+  $("#city-list").css('height',(h - hmod));
+  $("#more-list").css('width',(wselector));
+  $("#more-list").css('margin-left',(wmod));
+  $("#more-list").css('height',(h - hmod));
 
   $("#map_canvas").css('height',(h));
 	$("#map_canvas").css('width', (w-wmod));
