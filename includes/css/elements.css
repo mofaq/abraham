@@ -26,16 +26,19 @@ body{color:#111111;}
 #header .language_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 #header .country_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 
-.flag{height:16px;margin:6px 8px 0 0;}
-.flag-panel{height:16px;margin:12px 12px 0 0px;}
+.flag{height:16px;margin:10px 8px 0 0;}
+.flag-panel{height:32px;margin:11px 8px 0 0px;}
 
 /* the language selector */
 
 #language_selector{width:200px}
 
 .choose{font-weight:bold;margin:0 16px 0 24px;font-size:1.1em;letter-spacing:-1px;}
-.primary-option{font-size:1em;display:block;height:32px;line-height:24px;padding:0 8px 0 20px;opacity:0.5;}
-.primary-option.selected{display:block;line-height:24px;font-weight:bold;opacity:1;}
+.primary-option{font-size:1em;display:block;height:32px;line-height:32px;padding:0 8px 0 20px;opacity:0.5;}
+
+
+
+.primary-option.selected{display:block;line-height:32px;font-weight:bold;opacity:1;}
 #language-list ul{list-style-type:none;padding:0;margin:0;width:212px;}
 li.primary-option{display:block;border:1px solid #fefefe;}
 li.primary-option:hover{background:gainsboro;cursor:pointer;}
@@ -52,7 +55,7 @@ li.secondary-seperator{background:gainsboro;height:4px;margin:8px;}
 
 
 
-.action{height:40px;line-height:40px;padding:0 22px;margin-top:8px;}
+.action{height:40px;line-height:40px;padding:0 22px;margin-top:8px;overflow:hidden;}
 .action a{font-weight:bold;color:#6C7BD0;}
 
 
@@ -133,6 +136,8 @@ cursor: pointer;
 }
 
 .remove{
+font-size:1.2em;
+font-weight:bold;
 text-shadow: -1px -1px 1px #ffffff,1px 1px 1px #eeeeee;
 background: #6C7BD0;
 background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);

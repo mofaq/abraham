@@ -172,7 +172,7 @@ function setDefaultsRtl()
 
 function panelHeight()
 {
-	var hmod = 256
+	var hmod = 240
 	var wh = $(window).height();
   var ph = (wh-hmod);
 	$(".panel-container").css('min-height',ph);
@@ -293,7 +293,7 @@ function resizeFrame()
 
 function resizeFrame1() 
 {
-	var hmod = 101
+	var hmod = 96
 	var wmod = 381
 	var wselector = 256
 	var h = $(window).height();
@@ -420,7 +420,7 @@ function panelOpen(panelId,panelWidth)
   $("."+pId).siblings().removeClass('selected');
   //$("."+pId+" .marker").siblings().child().html('&lt;');
   $("."+pId).attr('onclick','panelClose("'+pId+'",'+pWidth+')');
-  $("."+pId+" .marker").html('&lt;');
+  $("."+pId+" .marker").html('&laquo;');
 
   //$("#map_canvas").animate({width:ww-(256+381)},700);
   //$("#map_canvas").css({width:ww-(256+381)});
@@ -447,8 +447,8 @@ function panelClose(panelId,panelWidth)
   $("."+pId).removeClass('selected');
   $("."+pId).siblings().removeClass('selected');
   $("."+pId).attr('onclick','panelOpen("'+pId+'",'+pWidth+')');
-  $("."+pId+" .marker").html('&gt;');
-  $(".marker").html('&gt;');
+  $("."+pId+" .marker").html('&raquo;');
+  $(".marker").html('&raquo;');
 
   $("#map_canvas").animate({width:ww -(381)},700);
   $("#map_canvas").css({width:ww-(381)});

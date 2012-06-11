@@ -41,32 +41,32 @@ function googleTranslateElementInit() {
 
 
 <!---->
-<div id="toolbar">
+<div id="toolbar" dir="null">
   <div class="toolbar-inner" style="float:left;">
     Something significant here...
   </div>
   <div class="toolbar-inner right">
-    Direction:
-		<button class="ltr remove">LTR</button>
-		<button class="rtl remove">RTL</button>
+    Text direction:
+		<button class="ltr panel-button remove" style="font-size:11px;height:20px">Left</button>
+		<button class="rtl panel-button remove" style="font-size:11px;height:20px;">Right</button>
   </div>
 
 </div>
 <!---->
 <div id="header" dir="null">
   <div class="header-inner">  
-	  <a href="index.html" style="color:white;text-decoration:none;"><c>SLAVE</c><span style="color:#000000"><c style="opacity:0.25;">BIKINI</c></span></a>
+	  <a href="index.html" style="color:white;text-decoration:none;"><c>LEARN</c><span style="color:#000000"><c style="opacity:0.25;">LANGUAGES</c></span></a>
   </div>
 
 </div>
 
 <div id="content" dir="null">
-	<div class="toggle-out left" style="position:absolute;z-index:1"><button class="panel-out">&gt;</button></div>
+	<div class="toggle-out left" style="position:absolute;z-index:1"><button class="panel-out">&raquo;</button></div>
   <div id="map_canvas"></div>
   <div id="panel">
 	  <div class="panel-header">
 
-        <button class="panel-button panel-in right remove">&lt;</button>
+        <button class="panel-button panel-in right remove">&laquo;</button>
         <button id="searches"class="panel-button left add" style="min-width:96px;">Search History</button>
         <button id="shortlist" class="panel-button left add" style="min-width:96px;">My choices</button>
 
@@ -80,13 +80,13 @@ function googleTranslateElementInit() {
               <div class="inner-header">
                 <ul>
                 <li class="language-list" onclick="panelOpen('language-list',256);">
-                  <b class="language_filter"></b><b class="right marker">&gt;</b>
+                  <b class="language_filter"></b><b class="right marker">&raquo;</b>
                 </li>
                 <li class="country-list" onclick="panelOpen('country-list',256);">
-                  <b class="country_filter"></b><b class="right marker">&gt;</b>
+                  <b class="country_filter"></b><b class="right marker">&raquo;</b>
                 </li>
                 <li class="destination-list" onclick="panelOpen('destination-list',256);">
-                  <b class="other-filter">Destinations...</b><b class="right marker">&gt;</b>
+                  <b class="other-filter">Destinations...</b><b class="right marker">&raquo;</b>
                 </li>
                 </ul>
                 <div class="action"><a href="#" class="add inner-button">More results</a> &sdot; <a href="#" class="remove">Less results</a></div>
@@ -114,7 +114,7 @@ function googleTranslateElementInit() {
   <div id="panels left">
   <div id="country-list">
 	  <div class="panel-header">
-      <div class="toggle left"><b>Choose Country </b><button class="right country-list remove">&lt;</button></div>
+      <div class="toggle left"><b>Choose Country </b><button class="right panel-button country-list remove">&laquo;</button></div>
     </div>
 	  <div class="panel-container">
       <div>Country List</div>
@@ -125,7 +125,7 @@ function googleTranslateElementInit() {
 
 	  <div class="panel-header">
       <div class="toggle left"><b>Language</b>
-        <button class="right language-list remove">&lt;</button>
+        <button class="right panel-button language-list remove">&laquo;</button>
         
       </div>
     </div>
@@ -149,6 +149,7 @@ function googleTranslateElementInit() {
               <li onclick="choose('lang_9');" id="lang_9" class="primary-option" rel="108" alias="spanish"><div class="flag left"><img src="flags/es.png"/></div>Spanish</li> 
               <li onclick="choose('lang_9a');" id="lang_9a" class="primary-option" rel="53" alias="japanese"><div class="flag left"><img src="flags/jp.png"/></div>Japanese</li>                                        				
               <li class="primary-seperator"></li>
+
               <li onclick="choose('lang_10');" id="lang_10" class="primary-option" rel="128" alias="afrikaans">Afrikaans</li>
               <li onclick="choose('lang_11');" id="lang_11" class="primary-option" rel="2" alias="alsatian">Alsatian</li>
               <li onclick="choose('lang_12');" id="lang_12" class="primary-option" rel="6" alias="armenian">Armenian</li>
@@ -232,7 +233,7 @@ function googleTranslateElementInit() {
     <div id="destination-list">
 	    <div class="panel-header">
         <div class="toggle left"><b>Destinations</b>
-          <button class="right destination-list remove marker">&lt;</button>          
+          <button class="right panel-button destination-list remove marker">&laquo;</button>          
         </div>
       </div>
       <div id="panel-container">

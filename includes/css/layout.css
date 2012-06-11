@@ -26,13 +26,13 @@ a{color:#6C7BD0;}
 
 #content{overflow:hidden;}
 
-#panel{position:absolute;z-index:5;float:left;background-color:#fefefe;width:381px;border-right:1px solid white;-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);}
+#panel{position:absolute;z-index:5;float:left;background-color:#fefefe;height:100%;width:381px;border-right:1px solid white;-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);}
 .panel-header{padding:16px 8px 0 24px; height:49px;min-width:222px;line-height:49px;border-bottom:1px solid gainsboro;}
 .panel-container{padding:8px 0 0 0;margin:0;}
 
 .panel-footer{font-size:0.7em;color:#6C7BD0;}
 
-.inner-header{padding:0;width:308px;}
+.inner-header{padding:0;width:336px;}
 
 #language-list{width:256px;position:absolute;z-index:4;}
 #country-list{width:256px;position:absolute;z-index:3;}
