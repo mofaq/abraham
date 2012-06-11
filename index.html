@@ -78,15 +78,15 @@ function googleTranslateElementInit() {
           <div class="overview">
             <div class="results">
               <div class="inner-header">
-                <ul class="">
+                <ul>
                 <li class="language-list" onclick="panelOpen('language-list',256);">
                   <b class="language_filter"></b><b class="right marker">&gt;</b>
                 </li>
                 <li class="country-list" onclick="panelOpen('country-list',256);">
-                  <b class="country_filter"></b><b class="right mark">&gt;</b>
+                  <b class="country_filter"></b><b class="right marker">&gt;</b>
                 </li>
                 <li class="destination-list" onclick="panelOpen('destination-list',256);">
-                  <b class="other-filter">Destinations...</b><span class="right"><b>&gt;</b></span>
+                  <b class="other-filter">Destinations...</b><b class="right marker">&gt;</b>
                 </li>
                 </ul>
                 <div class="action"><a href="#" class="add inner-button">More results</a> &sdot; <a href="#" class="remove">Less results</a></div>
@@ -111,10 +111,10 @@ function googleTranslateElementInit() {
     </div>
   </div>
 
-  <div id="panels">
+  <div id="panels left">
   <div id="country-list">
 	  <div class="panel-header">
-      <div class="toggle left"><b>Choose Country </b><button class="country-in right">&lt;</button></div>
+      <div class="toggle left"><b>Choose Country </b><button class="right country-list remove">&lt;</button></div>
     </div>
 	  <div class="panel-container">
       <div>Country List</div>
@@ -125,7 +125,7 @@ function googleTranslateElementInit() {
 
 	  <div class="panel-header">
       <div class="toggle left"><b>Language</b>
-        <button class="right language-in remove">&lt;</button>
+        <button class="right language-list remove">&lt;</button>
         
       </div>
     </div>
@@ -232,7 +232,7 @@ function googleTranslateElementInit() {
     <div id="destination-list">
 	    <div class="panel-header">
         <div class="toggle left"><b>Destinations</b>
-          <button class="right destination-in remove">&lt;</button>          
+          <button class="right destination-list remove marker">&lt;</button>          
         </div>
       </div>
       <div id="panel-container">

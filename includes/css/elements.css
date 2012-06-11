@@ -16,6 +16,7 @@ body{color:#111111;}
 .inner-header li{height:32px;line-height:32px;padding:0 8px 0 24px;margin:0}
 .inner-header li:hover{cursor:pointer;}
 
+#panel{}
 
 .modify_link{color:#e49501;text-decoration:underline;}
 

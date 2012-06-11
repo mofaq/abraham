@@ -133,6 +133,7 @@ function setDefaultsLtr()
 	//$(".language_filter").text('english');
 	$("#map_canvas").css('float','right');
 	$("#panel").css('float','left');
+	$("#panels").css('float','left');
 	$("#language-list").css('float','left').css('display','none');
 	$("#country-list").css('float','left').css('display','none');
 	$("#destination-list").css('float','left').css('display','none');
@@ -301,6 +302,10 @@ function resizeFrame1()
   $("#content").css('width',(w))
   $("#panel").css('height',(h - hmod));
   $("#panel").css('width',(wmod));
+  $("#panels").css('height',(h - hmod));
+  $("#panels").css('width',(wselector));
+  $("#panels").css('margin-left',wmod);
+
   $("#language-list").css('width',(wselector));
   $("#language-list").css('height',(h - hmod));
   $("#language-list").css('margin-left',(wmod));
@@ -310,6 +315,7 @@ function resizeFrame1()
   $("#destination-list").css('width',(wselector));
   $("#destination-list").css('margin-left',(wmod));
   $("#destination-list").css('height',(h - hmod));
+
   $("#map_canvas").css('height',(h));
 	$("#map_canvas").css('width', (w-wmod));
 
@@ -322,62 +328,6 @@ function resizeFrame1()
 
 }
 
-function resizeFrame2() 
-{
-
-	var hmod = 101
-	var wmod = 381
-	var wselector = 256
-	var h = $(window).height();
-    var w = $(window).width();
-  $("#content").css('height',(h - hmod));
-  $("#content").css('width',(w))
-  $("#panel").css('height',(h - hmod));
-  $("#panel").css('width',(wmod));
-  $("#language-list").css('width',(wselector));
-  $("#language-list").css('height',(h - hmod));
-  $("#country-list").css('width',(wselector));
-  //$("#country-list").css('margin-right',(w + wselector));
-  //$("#language-list").css('margin-right',(w + wselector));
-  $("#country-list").css('height',(h - hmod));
-  //$("#map_canvas").css('height',(h - hmod));
-	//$("#map_canvas").css('width', (w - (wmod - wselector)));
-
-
-	$(".wheight").text(h);
-	$(".wwidth").text(w);
-
-}
-
-function resizeFrame3() 
-{
-	var hmod = 101
-	var wmod = 381
-	var wselector = 256
-	var h = $(window).height();
-    var w = $(window).width();
-  $("#content").css('height',(h - hmod));
-  $("#content").css('width',(w))
-  $("#map_canvas").css('height',(h - hmod));
-	$("#map_canvas").css('width', (w));
-
-
-	$(".wheight").text(h);
-	$(".wwidth").text(w);
-
-}
-
-$(document).ready(function() {
-  $('button#results').click(function() {
-  $(".searches").hide();
-  $(".shortlist").hide();
-  $(".results").show();
-
-  panelHeight();
-
-    });
-});
-
 
 
 $(document).ready(function() {
@@ -388,7 +338,7 @@ $(document).ready(function() {
   $(".searches").load("./my-searches.html");
 
   panelHeight();
-  panelHeight();
+
 
     });
 });
@@ -400,7 +350,6 @@ $(document).ready(function() {
   $(".shortlist").show();
   $(".shortlist").load("./my-shortlist.html");
 
-  panelHeight();
   panelHeight();
 
     });
@@ -469,6 +418,7 @@ function panelOpen(panelId,panelWidth)
 
   $("."+pId).addClass('selected');
   $("."+pId).siblings().removeClass('selected');
+  //$("."+pId+" .marker").siblings().child().html('&lt;');
   $("."+pId).attr('onclick','panelClose("'+pId+'",'+pWidth+')');
   $("."+pId+" .marker").html('&lt;');
 
@@ -498,6 +448,7 @@ function panelClose(panelId,panelWidth)
   $("."+pId).siblings().removeClass('selected');
   $("."+pId).attr('onclick','panelOpen("'+pId+'",'+pWidth+')');
   $("."+pId+" .marker").html('&gt;');
+  $(".marker").html('&gt;');
 
   $("#map_canvas").animate({width:ww -(381)},700);
   $("#map_canvas").css({width:ww-(381)});
@@ -505,101 +456,6 @@ function panelClose(panelId,panelWidth)
   return;
 
 }
-
-
-
-
-
-function popOpen(panelId,panelWidth) 
-{
-	var pId = panelId
-	var pWidth = panelWidth
-	var h = $(window).height();
-  var ww = $(window).width();
-  var w = $("#map_canvas").width();
-
-  $("#"+pId).show();
-
-  if (pId!='panel'){
-  $("#"+pId).siblings().hide();
-  }
-
-  $("#map_canvas").animate({width:ww -(pWidth)},700);
-  $("#map_canvas").css({width:ww-(pWidth)});
-
-}
-
-function popClose(panelId,panelWidth) 
-{
-	var pId = panelId
-	var pWidth = panelWidth
-	var h = $(window).height();
-  var ww = $(window).width();
-  var w = $("#map_canvas").width();
-
-  $("#"+pId).animate().hide();
-  if (pId!='panel'){
-  $("#"+pId).siblings().hide();
-  }
-  $("#map_canvas").animate({width:ww-(pWidth)},700);
-  $("#map_canvas").css({width:w+(pWidth)});
-
-}
-
-$(document).ready(function() {
-  var w = $(window).width();
-  var d = $("input:hidden[name=text-direction]").val();
-
-
-	$('.language-out').toggle(
-    function() {
-      $(this).addClass('selected');
-      $(this).siblings().removeClass('selected');
-      popOpen('language-list',256);
-      //$("#country-list .panel-container").load("./_country_list.html");
-  },
-    function() {
-      $(this).removeClass('selected');
-       $("#language-list").animate().fadeOut();
-  });
-});
-
-
-$(document).ready(function() {
-  var w = $(window).width();
-  var d = $("input:hidden[name=text-direction]").val();
-	$('.destination-out').toggle(
-    function() {
-     $(this).addClass('selected');
-      $(this).siblings().removeClass('selected');
-      popOpen('destination-list',256);
-      //$("#country-list .panel-container").load("./_country_list.html");
-  },
-    function() {
-      $(this).removeClass('selected');
-       $("#destination-list").animate().fadeOut();
-  });
-});
-
-
-$(document).ready(function() {
-  var w = $(window).width();
-  var d = $("input:hidden[name=text-direction]").val();
-
-	$('.country-out').toggle(
-    function() {
-     $(this).addClass('selected');
-      $(this).siblings().removeClass('selected');
-      popOpen('country-list',256);
-      $("#country-list .panel-container").load("./_country_list.html");
-  },
-    function() {
-      $(this).removeClass('selected');
-       $("#country-list").animate().fadeOut();
-  });
-
-});
-
 
 
 
