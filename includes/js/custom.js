@@ -418,9 +418,9 @@ function panelOpen(panelId,panelWidth)
 
   $("."+pId).addClass('selected');
   $("."+pId).siblings().removeClass('selected');
-  //$("."+pId+" .marker").siblings().child().html('&lt;');
+  $(".marker").html('<img src="images/panel-marker-out.png"/>');
   $("."+pId).attr('onclick','panelClose("'+pId+'",'+pWidth+')');
-  $("."+pId+" .marker").html('&laquo;');
+  $("."+pId+" .marker").html('<img src="images/panel-marker-in.png"/>');
 
   //$("#map_canvas").animate({width:ww-(256+381)},700);
   //$("#map_canvas").css({width:ww-(256+381)});
@@ -447,8 +447,8 @@ function panelClose(panelId,panelWidth)
   $("."+pId).removeClass('selected');
   $("."+pId).siblings().removeClass('selected');
   $("."+pId).attr('onclick','panelOpen("'+pId+'",'+pWidth+')');
-  $("."+pId+" .marker").html('&raquo;');
-  $(".marker").html('&raquo;');
+  $("."+pId+" .marker").html('<img src="images/panel-marker-out.png"/>');
+  $(".marker").html('<img src="images/panel-marker-out.png"/>');
 
   $("#map_canvas").animate({width:ww -(381)},700);
   $("#map_canvas").css({width:ww-(381)});
@@ -459,38 +459,7 @@ function panelClose(panelId,panelWidth)
 
 
 
-$(document).ready(function() {
-  var w = $(window).width();
-  var d = $("input:hidden[name=text-direction]").val();
-    $('.language-in').click(function() {
-    $(this).removeClass('selected');
-    $("#language-list").animate().fadeOut();
-  //popClose('language-list',256);
-  });
-});
 
-$(document).ready(function() {
-  var w = $(window).width();
-  var d = $("input:hidden[name=text-direction]").val();
-	$('button.country-in').click(function() {
-      $(this).removeClass('opened');
-    $("#country-list").animate().fadeOut('slow');
-    //popClose('country-list',256);
-
-
-  });
-});
-
-$(document).ready(function() {
-  var w = $(window).width();
-  var d = $("input:hidden[name=text-direction]").val();
-	$('.destination-in').click(function() {
-    $("#destination-list").animate().fadeOut('slow');
-	  //popClose('destination-list',256);
-
-
-  });
-});
 
 
 
@@ -498,8 +467,9 @@ $(document).ready(function() {
   var w = $(window).width();
   var d = $("input:hidden[name=text-direction]").val();
 	$('button.panel-out').click(function() {
-   popOpen('panel',381);
-   
+   panelOpen('panel',381);
+  $("#map_canvas").animate({width:w},700);
+  $("#map_canvas").css({width:w-381});   
   });
 });
 
@@ -509,7 +479,7 @@ $(document).ready(function() {
   var d = $("input:hidden[name=text-direction]").val();
 	$('button.panel-in').click(function() {
     $("#panel").animate().fadeOut('slow');
-  //popClose('panel',381);
+  panelClose('panel',381);
   $("#map_canvas").animate({width:w},700);
   $("#map_canvas").css({width:w});
   });

@@ -9,7 +9,7 @@
 
 body{color:#111111;}
 
-
+.marker img{margin-top:10px;}
 .selected{background-color:pink;}
 
 .inner-header ul{padding:0;list-style-type:none;}
@@ -83,7 +83,7 @@ button.country-out{height:28px;border:2px solid white;margin:0 4px;padding:4px;b
 .destination-out{color:silver;margin-right:8px;}
 
 button.panel-in{height:28px;border:2px solid silver;padding:4px;border-radius:3px;width:28px;background-color:white;color:silver;font-weight:bold;}
-button.panel-button{height:31px;border:2px solid white;background-color:silver;border-radius:6px;padding:2px 8px;margin:0 4px 0 0;}
+button.panel-button{height:31px;border:2px solid white;background-color:silver;border-radius:6px;padding:0;margin:0 4px 0 0;}
 button.panel-in2{height:40px;border:3px solid #e49501;margin:16px 12px;padding:4px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
 button.panel-in3{height:40px;border:3px solid #e49501;margin:16px 12px;padding:4px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
 
@@ -136,7 +136,8 @@ cursor: pointer;
 }
 
 .remove{
-font-size:1.2em;
+font-size:22px;
+
 font-weight:bold;
 text-shadow: -1px -1px 1px #ffffff,1px 1px 1px #eeeeee;
 background: #6C7BD0;

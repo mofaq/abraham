@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
 
 
 <!---->
-<div id="toolbar" dir="null">
+<div id="toolbar" >
   <div class="toolbar-inner" style="float:left;">
     Something significant here...
   </div>
@@ -61,12 +61,12 @@ function googleTranslateElementInit() {
 </div>
 
 <div id="content" dir="null">
-	<div class="toggle-out left" style="position:absolute;z-index:1"><button class="panel-out">&raquo;</button></div>
+	<div class="toggle-out left" style="position:absolute;z-index:1"><button class="panel-out"><img src="images/panel-marker-out.png"/></button></div>
   <div id="map_canvas"></div>
   <div id="panel">
 	  <div class="panel-header">
 
-        <button class="panel-button panel-in right remove">&laquo;</button>
+        <button class="panel-in right remove"><img src="images/panel-marker-in.png"/></button>
         <button id="searches"class="panel-button left add" style="min-width:96px;">Search History</button>
         <button id="shortlist" class="panel-button left add" style="min-width:96px;">My choices</button>
 
@@ -80,13 +80,13 @@ function googleTranslateElementInit() {
               <div class="inner-header">
                 <ul>
                 <li class="language-list" onclick="panelOpen('language-list',256);">
-                  <b class="language_filter"></b><b class="right marker">&raquo;</b>
+                  <b class="language_filter"></b><b class="right marker"><img src="images/panel-marker-out.png" style="margin-top:10px;"/></b>
                 </li>
                 <li class="country-list" onclick="panelOpen('country-list',256);">
-                  <b class="country_filter"></b><b class="right marker">&raquo;</b>
+                  <b class="country_filter"></b><b class="right marker"><img src="images/panel-marker-out.png"/></b>
                 </li>
                 <li class="destination-list" onclick="panelOpen('destination-list',256);">
-                  <b class="other-filter">Destinations...</b><b class="right marker">&raquo;</b>
+                  <b class="other-filter">Destinations...</b><b class="right marker"><img src="images/panel-marker-out.png"/></b>
                 </li>
                 </ul>
                 <div class="action"><a href="#" class="add inner-button">More results</a> &sdot; <a href="#" class="remove">Less results</a></div>
@@ -106,7 +106,7 @@ function googleTranslateElementInit() {
 </div>
 </div>
 	  <div class="panel-footer"">
-      <button class="panel-button add" style="background-color:#6C7BD0;font-size:1.6em;letter-spacing:-1px;height:40px;margin:16px 0 0 28px;width:320px;text-align:center;font-weight:bold;">Add your school</button>
+      <!--button class="panel-button add" style="background-color:#6C7BD0;font-size:1.6em;letter-spacing:-1px;height:40px;margin:16px 0 0 28px;width:320px;text-align:center;font-weight:bold;">Add your school</button-->
       <div style="margin:6px 0 0 28px;width:300px">Abraham | v0.3</div>
     </div>
   </div>
@@ -114,7 +114,7 @@ function googleTranslateElementInit() {
   <div id="panels left">
   <div id="country-list">
 	  <div class="panel-header">
-      <div class="toggle left"><b>Choose Country </b><button class="right panel-button country-list remove">&laquo;</button></div>
+      <div class="toggle left"><b>Choose Country </b><button class="right panel-button country-list remove"><img src="images/panel-marker-in.png"/></button></div>
     </div>
 	  <div class="panel-container">
       <div>Country List</div>
@@ -125,7 +125,7 @@ function googleTranslateElementInit() {
 
 	  <div class="panel-header">
       <div class="toggle left"><b>Language</b>
-        <button class="right panel-button language-list remove">&laquo;</button>
+        <button class="right panel-button language-list remove"><img src="images/panel-marker-in.png"/></button>
         
       </div>
     </div>
@@ -233,7 +233,7 @@ function googleTranslateElementInit() {
     <div id="destination-list">
 	    <div class="panel-header">
         <div class="toggle left"><b>Destinations</b>
-          <button class="right panel-button destination-list remove marker">&laquo;</button>          
+          <button class="right panel-button destination-list remove"><img src="images/panel-marker-in.png"/></button>          
         </div>
       </div>
       <div id="panel-container">
