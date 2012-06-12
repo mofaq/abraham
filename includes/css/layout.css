@@ -19,18 +19,20 @@ a{color:#6C7BD0;}
 .toolbar-inner{margin:0 24px;}
 
 #header{width:100%;height:71px;line-height:71px; overflow:hidden;background-color:#6c7bd0;color:white;}
-#header-home{height:6em;line-height:6em;width:100%;padding:0; overflow:hidden;background-color:#6c7bd0;color:#dcdcdc;text-align:center;}
+#header-home{height:5em;line-height:5em;width:100%;padding:0; overflow:hidden;background-color:#6c7bd0;color:#dcdcdc;text-align:center;}
 #header-home .header-inner{margin:0 auto;font-family:'Slackey','verdana',sans-serif;font-size:3em;letter-spacing:-1px;text-transform:none;padding:0;color:#f7bc4e;}
 
 .header-inner a{color:#f7bc4e;}
 
 
-.info-header{font-family:'Dosis';font-size:22px;letter-spacing:-1px;}
+.info-header{font-family:'Slackey';font-size:22px;letter-spacing:-1px;}
 
 
-.homepage-infobox{width:278px;min-height:256px;padding:8px;margin:0;border-radius:8px;border:2px solid white;border-radius:8px;cursor: pointer;
+.homepage-infobox{width:278px;min-height:196px;padding:8px;margin:0;border-radius:8px;border:2px solid white;border-radius:8px;cursor: pointer;
 -webkit-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;
 -moz-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;}
+
+.homepage-infobox b{color:#6c7bd0;}
 
 .header-inner{margin:0 24px auto;font-family:'Slackey','verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
 
@@ -60,5 +62,15 @@ a{color:#6C7BD0;}
 #map{-webkit-box-shadow:0 3px 6px #bdbdbd inset;box-shadow:0 3px 6px #bdbdbd inset;}
 #map_canvas{height:100%;width:100%;}
 
-#footer{float:right;width:100%;height:29px;line-height:29px;background-color:black;color:white;z-index:99;}
+#footer{float:right;width:100%;height:29px;line-height:29px;color:white;z-index:99;}
+#footer ul{list-style-type:none;padding:0;}
+#footer ul li{font-size:12px;line-height:13px;}
+
+
+
 .footer-inner{margin:0 32px;}
+
+
+
+
+
