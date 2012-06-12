@@ -20,7 +20,7 @@ a{color:#6C7BD0;}
 
 #header{width:100%;height:71px;line-height:71px; overflow:hidden;background-color:#6c7bd0;color:white;}
 #header-home{height:5em;line-height:5em;width:100%;padding:0; overflow:hidden;background-color:#6c7bd0;color:#dcdcdc;text-align:center;}
-#header-home .header-inner{margin:0 auto;font-family:'Slackey','verdana',sans-serif;font-size:3em;letter-spacing:-1px;text-transform:none;padding:0;color:#f7bc4e;}
+#header-home .header-inner{margin:0 auto;font-family:'Slackey',sans;font-size:3em;letter-spacing:-1px;text-transform:none;padding:0;color:#f7bc4e;}
 
 .header-inner a{color:#f7bc4e;}
 
@@ -34,7 +34,7 @@ a{color:#6C7BD0;}
 
 .homepage-infobox b{color:#6c7bd0;}
 
-.header-inner{margin:0 24px auto;font-family:'Slackey','verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
+.header-inner{margin:0 24px auto;font-family:'Slackey',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
 
 .logo{font-family:impact, 'arial narrow';margin:0 0 16px 0;padding:0;line-height:71px;height:71px;width:356px;font-size:2.2em;font-weight:normal;letter-spacing:-2px;color:white;text-transform:uppercase;}
 .search{height:71px;}

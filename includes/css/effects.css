@@ -11,7 +11,8 @@ text-shadow:
 text-shadow: 
   1px 1px  0px #903d0f,1px 1px 0px #b57600,
   2px 2px 0px #903d0f,-2px -2px 0px #903d0f,
-  -3px 3px  0px #903d0f,  -3px 3px  0px #903d0f
+  -3px 3px  0px #903d0f,  -3px 3px  0px #903d0f,
+rgba(0,0,0,0.1) 0 0 1px
   /*3px 3px  0px #ffffff,4px 4px 0px #903d0f,8px 8px 0px #903d0f,-8px 8px 0px #903d0f,8px -8px 0px #903d0f,
   -8px 0  0 #903d0f,8px 0  0 #903d0f,4px 4px 0px #903d0f,
   -1px -4px  0 #903d0f,-4px -2px #b57600,
@@ -28,7 +29,8 @@ color: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#b6bee8), 
 text-shadow: 
   1px 1px  0px #b57600,1px 1px 0px #903d0f,
   2px 2px 0px #903d0f,-2px -2px 0px #903d0f,
-  -3px 3px  0px #903d0f,  -3px 3px  0px #903d0f
+  -3px 3px  0px #903d0f,  -3px 3px  0px #903d0f,
+rgba(0,0,0,0.1) 0 0 1px
   /*3px 3px 0px #903d0f,-3px -3px 0px #903d0f,-3px 3px 0px #903d0f,3px -3px 0px #903d0f,3px 0 0px #903d0f,-3px 0 0px #903d0f,0 3px 0px #903d0f,0 -3px 0px #903d0f,
   4px 4px 0px #903d0f,-4px -4px 0px #903d0f,-4px 4px 0px #903d0f,4px -4px 0px #903d0f,4px 0 0px #903d0f,-4px 0 0px #903d0f,0 4px 0px #903d0f,0 -4px 0px #903d0f,
   5px 5px 0px #903d0f,-5px -5px 0px #903d0f,-5px 5px 0px #903d0f,5px -5px 0px #903d0f,5px 0 0px #903d0f,-5px 0 0px #903d0f,0 5px 0px #903d0f,0 -5px 0px #903d0f,

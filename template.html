@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Abraham</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<!-- styles seperated for convenience -->
+	<link href="./includes/css/layout.css" media='screen' rel='stylesheet' type='text/css' /> 
+	<link href="./includes/css/elements.css" media='screen' rel='stylesheet' type='text/css' /> 
+	<link href="./includes/css/effects.css" media='screen' rel='stylesheet' type='text/css' />
+	<link href="./includes/css/scrollbar.css" media='screen' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+	<!-- jscript -->
+
+	<script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyAlzkt8p7MDY0igloVFWD1-kQ2wYynxLgs&amp;sensor=false' type='text/javascript'></script>
+	<script src="./includes/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="./includes/js/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script src="./includes/js/jquery.scroll.min.js" type="text/javascript"></script>
+  <script src="./includes/js/jquery.tools.min.js"></script>
+  <script src="./includes/js/jquery.color.js"></script>
+	<script src="./includes/js/custom.js" type="text/javascript"></script>
+ </head>
+
+<body onload="initMap();">
+<!---->
+<div id="sessions" style="visibility:hidden;">
+<input type="hidden" name="text-direction" value="rtl"/>
+<input type="hidden" name="language-filter" value="language"/>
+<input type="hidden" name="country-filter" value="country"/>
+</div>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+<!---->
+<div id="header" dir="null">
+  <div class="toolbar" >
+    <div class="toolbar-inner left">
+      Something significant here...
+    </div>
+    <div class="toolbar-inner right">
+      Text direction:
+		  <button class="ltr panel-button remove" style="font-size:11px;height:20px">Left</button>
+		  <button class="rtl panel-button remove" style="font-size:11px;height:20px;">Right</button>
+      <div id="google_translate_element" class="right" style="background-color:white;top:32px;"></div>
+    </div>
+
+  </div>
+  <div class="header-inner">  
+<a href="index.html" style="text-decoration:none;color:#f7bc4e;">Ginger<span class="emphasis">Snap</span></a>
+
+</div>
+</div>
+
+<div id="content" dir="null">
+	<div class="toggle-out left" style="position:absolute;z-index:1"><button class="panel-out"><img src="images/panel-marker-out.png"/></button></div>
+  <div id="map_canvas"></div>
+  <div id="panel">
+	  <div class="panel-header">
+
+        <button class="panel-in right remove"><img src="images/panel-marker-in.png"/></button>
+        <button id="searches"class="add panel-button left" style="min-width:96px;">Search History</button>
+        <button id="shortlist" class="panel-button left add" style="min-width:96px;">My choices</button>
+
+    </div>
+	  <div class="panel-container">
+      <div id="scrollbar1">
+	      <div class="scrollbar right"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	      <div class="viewport">
+          <div class="overview">
+            <div class="results">
+              <div class="inner-header">
+                <ul>
+                <li class="language-list" onclick="panelOpen('language-list',256);">
+                  <b class="language_filter"></b><b class="right marker"><img src="images/panel-marker-out.png" style="margin-top:10px;"/></b>
+                </li>
+                <li class="country-list" onclick="panelOpen('country-list',256);">
+                  <b class="country_filter"></b><b class="right marker"><img src="images/panel-marker-out.png"/></b>
+                </li>
+                <li class="city-list" onclick="panelOpen('city-list',256);">
+                  <b class="city_filter"></b><b class="right marker"><img src="images/panel-marker-out.png"/></b>
+                </li>
+                <li class="more-list" onclick="panelOpen('more-list',256);">
+                  <b class="more-filter">More options...</b><b class="right marker"><img src="images/panel-marker-out.png"/></b>
+                </li>
+                </ul>
+                <div class="action"><a href="#" class="add inner-button">More results</a> &sdot; <a href="#" class="remove">Less results</a></div>
+              </div>
+              <ol class="inner-results">
+                <li class="result-item">
+                  <div class="right"><img src="images/cf-logo.png" style="width:24px;margin:0;" class="left"/><a href="#">The name of a school.</a><br>This is a meaningful sentence so that the translator can latch on to something.</div>
+                  <div class="right"><b>Something</b></div>
+                </li>
+              </ol>
+            </div>
+            <div class="searches"></div>
+            <div class="shortlist"></div>
+          </div>
+      </div>
+
+</div>
+</div>
+	  <div class="panel-footer"">
+      <!--button class="panel-button add" style="background-color:#6C7BD0;font-size:1.6em;letter-spacing:-1px;height:40px;margin:16px 0 0 28px;width:320px;text-align:center;font-weight:bold;">Add your school</button-->
+      <div style="margin:6px 0 0 28px;width:300px">Abraham | v0.4</div>
+    </div>
+  </div>
+
+  <div id="panels left">
+  <div id="country-list">
+	  <div class="panel-header">
+      <div class="toggle left"><b>Choose Country </b><button class="right panel-button country-list remove"><img src="images/panel-marker-in.png"/></button></div>
+    </div>
+	  <div class="panel-container">
+      <div>Country List</div>
+    </div>
+  </div>
+
+  <div id="language-list">  
+
+	  <div class="panel-header">
+      <div class="toggle left"><b>Language</b>
+        <button class="right panel-button language-list remove"><img src="images/panel-marker-in.png"/></button>
+        
+      </div>
+    </div>
+    <div class="panel-container">
+       <div id="scrollbar2">
+	    <div class="scrollbar right"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	    <div class="viewport">
+        <div class="overview">
+          <div class="results">  
+            <ul>
+              <li onclick="choose('lang_1');" id="lang_1" class="primary-option" alias="english"><div class="flag left"><img src="flags/gb.png"/></div>English</li>
+              <li onclick="choose('lang_2');" id="lang_2" class="primary-option" alias="german"><div class="flag left"><img src="flags/de.png"/></div>German</li>
+              <li onclick="choose('lang_3');" id="lang_3" class="primary-option" alias="french"><div class="flag left"><img src="flags/fr.png"/></div>French</li>
+              <li class="primary-seperator"></li>
+              <li onclick="choose('lang_10');" id="lang_10" class="primary-option" alias="afrikaans">Afrikaans</li>
+              <li onclick="choose('lang_11');" id="lang_11" class="primary-option" alias="afrikaans">Another</li>
+              <li onclick="choose('lang_12');" id="lang_12" class="primary-option" alias="afrikaans">Another</li>
+              <li onclick="choose('lang_13');" id="lang_13" class="primary-option" alias="afrikaans">Another</li>
+            <ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="city-list">
+	  <div class="panel-header">
+      <div class="toggle left"><b>Choose city </b><button class="right panel-button country-list remove"><img src="images/panel-marker-in.png"/></button></div>
+    </div>
+	  <div class="panel-container">
+      <div>City List</div>
+    </div>
+  </div>
+  <div id="more-list">
+	  <div class="panel-header">
+      <div class="toggle left"><b>More options </b><button class="right panel-button country-list remove"><img src="images/panel-marker-in.png"/></button></div>
+    </div>
+	  <div class="panel-container">
+    </div>
+  </div>
+
+  </div>
+  <!---->
+
+
+ 
+
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
