@@ -26,6 +26,9 @@ body{color:#111111;}
 #header .language_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 #header .country_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 
+.dropdown{height:33px;width:309px;background-image:url("images/dropdown-bg.png")}
+
+
 .flag{height:16px;margin:10px 8px 0 0;}
 .flag-panel{height:32px;margin:11px 8px 0 0px;}
 

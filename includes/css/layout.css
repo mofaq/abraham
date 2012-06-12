@@ -22,7 +22,7 @@ a{color:#6C7BD0;}
 #header-home{width:100%;padding:3em 0 0 0;height:6em; overflow:hidden;background-color:#6c7bd0;color:white;text-align:center;}
 #header-home .header-inner{margin:0 24px;font-family:'verdana',sans-serif;font-size:3em;font-weight:bold;letter-spacing:-3px;text-transform:none;padding:0;}
 
-.homepage-infobox{width:256px;float:left;}
+.homepage-infobox{width:224px;float:left;padding:8px;margin:0 8px;}
 
 .header-inner{margin:0 24px;font-family:'verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
 
