@@ -7,6 +7,8 @@
 
 
 
+
+
 body{color:#111111;}
 
 .marker img{margin-top:10px;}
@@ -26,9 +28,9 @@ body{color:#111111;}
 #header .language_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 #header .country_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 
-.dropdown{font-weight:bold;color:#2d3a8b;padding:0 8px;text-align:left;line-height:32px;height:33px;width:240px;background-image:url('../../images/dropdown-bg.png');border:2px solid white;border-radius:8px;cursor: pointer;
--webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
--moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;}
+.dropdown{font-weight:bold;color:#2d3a8b;padding:0 8px;text-align:left;line-height:32px;height:33px;width:280px;background-image:url('../../images/dropdown-bg.png');background-repeat:no-repeat;background-position:right;border:2px solid white;border-radius:8px;cursor: pointer;
+-webkit-box-shadow: 1px 1px 3px #2d3a8b, -1px -1px 3px #2d3a8b;
+-moz-box-shadow: 1px 1px 3px #2d3a8b, -1px -1px 3px #2d3a8b;}
 
 
 .flag{height:16px;margin:10px 8px 0 0;}
@@ -66,7 +68,7 @@ li.secondary-seperator{background:gainsboro;height:4px;margin:8px;}
 
 .result-item{padding:0 24px;margin:0 0 4px 0;width:296px;height:64px;overflow:hidden;}
 .result-item:hover{padding:0 24px;margin:0 0 4px 0;width:296px;height:64px;overflow:hidden;cursor:pointer;}
-.result-item{font-size:12px;}
+.result-item{font-size:12px;line-height:16px;}
 .result-item a{font-size:12px;font-weight:bold;text-decoration:none}
 
 ol.inner-results{padding:0;list-style-type:lower-alpha;}
@@ -130,7 +132,7 @@ min-width: 128px;
 color:white;
 text-shadow: -1px -1px 1px #6C7BD0,1px 1px 1px #242495;
 background: #6C7BD0;
-background: -moz-linear-gradient(top, #6C7BD0 0%, #4355bc 49%, #F60 #6C7BD0, #6C7BD0 100%);
+background: -moz-linear-gradient(top, #6C7BD0 0%, #4355bc 51%, #4355bc 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6C7BD0), color-stop(49%,#4355bc), color-stop(51%,#6C7BD0), color-stop(100%,#828ed7));
 background: -webkit-linear-gradient(top, #6C7BD0 0%,#4355bc 51%,#4355bc 100%);
 background: linear-gradient(top, #6C7BD0 0%,#4355bc 50%,#242495 60%,#6C7BD0 100%);

@@ -1,5 +1,5 @@
 html {height:100%;font-family:arial;overflow:hidden;}
-body {margin:0; padding:0; height:100%; }
+body {margin:0; padding:0; height:100%;color:#111111; }
 
 a{color:#6C7BD0;}
 
@@ -19,14 +19,20 @@ a{color:#6C7BD0;}
 .toolbar-inner{margin:0 24px;}
 
 #header{width:100%;height:71px;line-height:71px; overflow:hidden;background-color:#6c7bd0;color:white;}
-#header-home{width:100%;padding:1em 0; overflow:hidden;background-color:#6c7bd0;color:white;text-align:center;}
-#header-home .header-inner{margin:0 auto;font-family:'verdana',sans-serif;font-size:3em;font-weight:bold;letter-spacing:-3px;text-transform:none;padding:0;}
+#header-home{height:6em;line-height:6em;width:100%;padding:0; overflow:hidden;background-color:#6c7bd0;color:#dcdcdc;text-align:center;}
+#header-home .header-inner{margin:0 auto;font-family:'Slackey','verdana',sans-serif;font-size:3em;letter-spacing:-1px;text-transform:none;padding:0;color:#f7bc4e;}
 
-.homepage-infobox{width:232px;min-height:256px;padding:8px;margin:0 8px;border-radius:8px;border:2px solid white;border-radius:8px;cursor: pointer;
+.header-inner a{color:#f7bc4e;}
+
+
+.info-header{font-family:'Dosis';font-size:22px;letter-spacing:-1px;}
+
+
+.homepage-infobox{width:278px;min-height:256px;padding:8px;margin:0;border-radius:8px;border:2px solid white;border-radius:8px;cursor: pointer;
 -webkit-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;
 -moz-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;}
 
-.header-inner{margin:0 auto;font-family:'verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
+.header-inner{margin:0 24px auto;font-family:'Slackey','verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
 
 .logo{font-family:impact, 'arial narrow';margin:0 0 16px 0;padding:0;line-height:71px;height:71px;width:356px;font-size:2.2em;font-weight:normal;letter-spacing:-2px;color:white;text-transform:uppercase;}
 .search{height:71px;}
@@ -35,7 +41,7 @@ a{color:#6C7BD0;}
 #content-home{overflow:hidden;text-align:center;}
 
 #panel{position:absolute;z-index:5;float:left;background-color:#fefefe;height:100%;width:381px;border-right:1px solid white;-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);}
-.panel-header{padding:16px 8px 0 24px; height:49px;min-width:222px;line-height:49px;border-bottom:1px solid gainsboro;}
+.panel-header{color:#111111;padding:16px 8px 0 24px; height:49px;min-width:222px;line-height:49px;border-bottom:1px solid gainsboro;}
 .panel-container{padding:0;margin:0;}
 
 .panel-footer{font-size:0.7em;color:#6C7BD0;}
