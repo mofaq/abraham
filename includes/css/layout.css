@@ -19,12 +19,14 @@ a{color:#6C7BD0;}
 .toolbar-inner{margin:0 24px;}
 
 #header{width:100%;height:71px;line-height:71px; overflow:hidden;background-color:#6c7bd0;color:white;}
-#header-home{width:100%;padding:3em 0 0 0;height:6em; overflow:hidden;background-color:#6c7bd0;color:white;text-align:center;}
-#header-home .header-inner{margin:0 24px;font-family:'verdana',sans-serif;font-size:3em;font-weight:bold;letter-spacing:-3px;text-transform:none;padding:0;}
+#header-home{width:100%;padding:1em 0; overflow:hidden;background-color:#6c7bd0;color:white;text-align:center;}
+#header-home .header-inner{margin:0 auto;font-family:'verdana',sans-serif;font-size:3em;font-weight:bold;letter-spacing:-3px;text-transform:none;padding:0;}
 
-.homepage-infobox{width:224px;float:left;padding:8px;margin:0 8px;}
+.homepage-infobox{width:232px;min-height:256px;padding:8px;margin:0 8px;border-radius:8px;border:2px solid white;border-radius:8px;cursor: pointer;
+-webkit-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;
+-moz-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;}
 
-.header-inner{margin:0 24px;font-family:'verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
+.header-inner{margin:0 auto;font-family:'verdana',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
 
 .logo{font-family:impact, 'arial narrow';margin:0 0 16px 0;padding:0;line-height:71px;height:71px;width:356px;font-size:2.2em;font-weight:normal;letter-spacing:-2px;color:white;text-transform:uppercase;}
 .search{height:71px;}

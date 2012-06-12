@@ -26,7 +26,9 @@ body{color:#111111;}
 #header .language_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 #header .country_filter{background-color:white;border-radius:6px;padding:4px 16px;cursor:pointer;min-width:256px;}
 
-.dropdown{height:33px;width:309px;background-image:url("images/dropdown-bg.png")}
+.dropdown{font-weight:bold;color:#2d3a8b;padding:0 8px;text-align:left;line-height:32px;height:33px;width:240px;background-image:url('../../images/dropdown-bg.png');border:2px solid white;border-radius:8px;cursor: pointer;
+-webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+-moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;}
 
 
 .flag{height:16px;margin:10px 8px 0 0;}
