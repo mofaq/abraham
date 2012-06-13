@@ -1,0 +1,168 @@
+
+
+/* Custom
+
+----------------------------------------------------------------------------------------------------*/
+
+
+#panel_1{width:381px;display:block;}
+#panel_2{width:256px;margin-left:381px;display:block;}
+#panel_3{width:172px;display:none;}
+
+
+
+
+
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_2 {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100.0%;
+	
+	
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0 !important;
+}
+
+.omega {
+	margin-right: 0 !important;
+}
+
+
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2{
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* Grid >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_2 .grid_1{
+	width:50.0%;
+
+}
+
+.container_2 .grid_2{
+	width:100.0%;
+}
+
+
+
+
+.grid_1 .grid_1{
+    width:98.0%;
+    margin-left: 6.0%;
+	margin-right: 6.0%;
+}
+
+
+
+.grid_2 .grid_1{
+    width:48.0%;
+    margin-left: 3.0%;
+	margin-right: 3.0%;
+}
+
+.grid_2 .grid_2{
+    width:98.0%;
+    margin-left: 3.0%;
+	margin-right: 3.0%;
+}
+
+
+
+
+
+
+/* Prefix Extra Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_2 .prefix_1 {
+    padding-left:50.0%;
+}
+
+
+
+/* Suffix Extra Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_2 .suffix_1 {
+    padding-right:50.0%;
+}
+
+
+
+/* Push Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_2 .push_1 {
+    left:50.0%;
+}
+
+
+
+
+
+/* Pull Space >> 2 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_2 .pull_1 {
+    right:50.0%;
+}
+
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}

@@ -1,0 +1,88 @@
+html {/*height:100%*/;font-family:arial;overflow:hidden;}
+body {margin:0; padding:0;color:#111111; }
+
+a{color:#6C7BD0;}
+
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both}
+.hidden{display:none;}
+
+.white{color:white}
+.pop{font-size:11px;font-weight:bold;color:white;border:1px solid #2d3a8b;background-color:#2d3a8b;height:32px;width:32px;border-radius:32px;}
+
+/*.hover{background-color:pink;} Now done via jQuery*/
+
+#logo{height:71px; width:100%;}
+.logo-inner{height:71px;line-height:71px;margin:0 24px;font-size:2.2em;font-weight:normal;letter-spacing:-2px;color:white;}
+.logo-inner a{text-decoration:none;}
+.logo{}
+
+
+#toolbar{width:100%;height:32px;line-height:32px;background-color:white;color:silver;font-size:12px;padding:0 24px;}
+.toolbar-inner{padding-right:24px;height:32px;}
+
+#google_translate_element .goog-te-gadget-simple{height:26px;line-height:26px;border-left:0;border-top:0;border-right:0;border-bottom:0;}
+.goog-te-gadget-simple{height:26px;line-height:26px;border-left:0;border-top:0;border-right:0;border-bottom:0;}
+
+#header{width:100%;height:103px;overflow:hidden;background-color:#6c7bd0;color:white;}
+#header-home{height:5em;line-height:5em;width:100%;padding:0; overflow:hidden;background-color:#6c7bd0;color:#dcdcdc;text-align:center;}
+#header-home .header-inner{height:5em;line-height:5em;margin:0 auto;font-family:'Slackey',sans;font-size:3em;letter-spacing:-1px;text-transform:none;padding:0;color:#f7bc4e;}
+
+.header-inner a{color:#f7bc4e;}
+
+
+.info-header{font-family:'Slackey';font-size:22px;letter-spacing:-1px;}
+
+
+.homepage-infobox{width:278px;min-height:196px;padding:8px;margin:0;border-radius:8px;border:2px solid white;border-radius:8px;cursor: pointer;
+-webkit-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;
+-moz-box-shadow: 1px 1px 3px #6c7bd0, -1px -1px 3px #6c7bd0;}
+
+.homepage-infobox b{color:#6c7bd0;}
+
+.header-inner{margin:0 24px auto;font-family:'Slackey',sans-serif;font-size:1.9em;font-weight:bold;letter-spacing:-1px;color:white;text-transform:none;}
+
+#map{height:100%;}
+
+.search{height:71px;}
+
+#content{overflow:hidden;height:100%;}
+#content-home{overflow:hidden;text-align:center;}
+
+#panel_1{position:absolute;z-index:5;float:left;background-color:#fefefe;height:100%;width:381px;border-right:1px solid white;-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);}
+
+#panel_2{position:absolute;z-index:4;float:left;background-color:#fefefe;height:100%;width:381px;border-right:1px solid white;-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);}
+
+.panel-header{color:#111111;padding:16px 8px 0 24px; height:49px;min-width:222px;line-height:49px;border-bottom:1px solid gainsboro;}
+.panel-container{padding:12px 0;margin:0;}
+
+.panel-footer{font-size:0.7em;color:#6C7BD0;}
+
+.inner-header{padding:0;width:336px;}
+.inner-header ul{margin:0;padding:0;width:336px;}
+
+#language-list{width:256px;position:absolute;z-index:4;}
+#country-list{width:256px;position:absolute;z-index:3;}
+#destination-list{width:256px;position:absolute;z-index:2;}
+
+
+
+.toggle{height:32px;line-height:28px;min-width:222px}
+.toggle-out{height:29px;padding:4px;}
+
+#map{-webkit-box-shadow:0 3px 6px #bdbdbd inset;box-shadow:0 3px 6px #bdbdbd inset;}
+#map_canvas{height:100%;width:100%;}
+
+#footer{float:right;width:100%;height:29px;line-height:29px;color:white;z-index:99;}
+#footer ul{list-style-type:none;padding:0;}
+#footer ul li{font-size:12px;line-height:13px;}
+
+
+
+.footer-inner{margin:0 32px;}
+
+
+
+
+

@@ -11,10 +11,16 @@
 	<link href="./includes/css/effects.css" media='screen' rel='stylesheet' type='text/css' /> 
 	<link href="./includes/css/elements.css" media='screen' rel='stylesheet' type='text/css' /> 
 
-<link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+<!--link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'-->
+<script src="http://cufon.shoqolate.com/js/cufon-yui.js" type="text/javascript"></script>
+<script src="./includes/js/chunkfive.cufonfonts.js" type="text/javascript"></script>
+<script src="./includes/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+Cufon.replace('.cufon', { fontFamily: 'ChunkFive-Roman', hover: true }); 
+</script>
 
-	<script src="./includes/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	
 
 <script>
 function googleTranslateElementInit() {
@@ -31,7 +37,7 @@ function googleTranslateElementInit() {
 <!---->
 
 
-<div id="google_translate_element" class="right"></div>
+<div id="google_translate_element" class="right" style="height:32px;"></div>
 
 
 <!---->
@@ -47,10 +53,12 @@ function googleTranslateElementInit() {
 </div>
 <!---->
 <div id="header-home" dir="null">
-  <div class="header-inner">  
-	  <a href="index.html" style="text-decoration:none;color:#f7bc4e;">Ginger<span class="emphasis">Snap</span></a>
+  <div class="header-inner" style="height:3em;line-height:3em;margin-top:32px;">  
+    <a href="index.html" style="text-decoration:none;color:#f7bc4e;" class="cufon">Course<span class="emphasis cufon">Finders</span><img src="images/marker24.png" width="18px" style="-webkit-transform:rotate(9deg)"/></a>
   </div>
 </div>
+<div class="clear"></div>
+<!---->
 <div id="strapline-home">
   <div style="width:600px;margin:0 auto;overflow:hidden;">
   <div class="strapline" style="font-size:1.3em;height:1.6em;line-height:32px;">
@@ -63,7 +71,7 @@ function googleTranslateElementInit() {
 
 <div class="panel-header" style="height:68px;width:100%;margin:0;padding:0;">
   <div style="width:616px;margin:0 auto;padding:16px;">
-  <div class="info-header left" style="height:68px;line-height:40px;color:#f7bc4e;position:relative;margin:0 0 0 -196px; width:196px">Start here ➼</div>
+  <div class="info-header left" style="position:relative;margin:0 0 0 -196px; width:196px;color:#f7bc4e;"><span class="cufon" style="height:68px;line-height:40px;">Start here</span>➼</div>
     <div class="dropdown left">
       <b class="language_filter">French</b><div class="left flag-panel"><img src="flags/fr.png"/></div>
     </div>
@@ -78,7 +86,7 @@ function googleTranslateElementInit() {
   <div class="homepage-infobox left">
   <div class="info-header">
  
-	    <a href="index.html" style="text-decoration:none;">For schools.</a>
+	    <a href="index.html" style="text-decoration:none;" class="cufon">For schools.</a>
 
    </div>
 
@@ -93,7 +101,7 @@ function googleTranslateElementInit() {
   <div class="homepage-infobox right">
   <div class="info-header">
 
-	    <a href="index.html" style="text-decoration:none;">For students.</a>
+	    <a href="index.html" style="text-decoration:none;" class="cufon">For students.</a>
 
     </div>
     <p>Welcome to <b>Ginger Juice</b>. We have one of the most comprehensive listings of langauge course. Browse courses, shortlist and apply all from one place!</p>
@@ -104,7 +112,7 @@ function googleTranslateElementInit() {
   <div class="clear"></div>
 
   <div class="homepage-infobox" style="min-height:32px;width:600px;margin:16px auto;text-align:center; color:silver;font-size:20px;">
-    <span class="info-header left" style="color:#f7bc4e;">We're hot!</span><br/>
+    <span class="info-header left cufon" style="color:#f7bc4e;">We're hot!</span><br/>
   <p><b>Student Searches:</b> 2.3m | <b>Schools:</b> 14352 | <b>Courses:</b> 73522</p>
 
 </div>
