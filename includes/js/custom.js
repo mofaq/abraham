@@ -222,10 +222,12 @@ function markerSwap(uuid){
     mapElements[activeMarker]['marker']['icon'] = './images/marker.png';
     mapElements[activeMarker]['marker'].setMap(map);
     mapElements[activeMarker]['overlay'].setMap(null);
+    $("#" + activeMarker).css('background','');
   }
   mapElements[uuid]['marker']['icon'] = './images/marker40.png';
   mapElements[uuid]['marker'].setMap(map);
   mapElements[uuid]['overlay'].setMap(map);
+  $("#" + uuid).css('background','pink');
   activeMarker = uuid;
 }
 
@@ -247,9 +249,12 @@ $(document).ready(function() {
         content: overlayContent
       });
       mapElements[uuid] = {'marker':marker,'overlay':overlay};
-      var clone = $('.inner-results').children(':first').clone().removeClass('selected').appendTo('.inner-results');
+      var clone = $('.inner-results').children(':first').clone();
+      clone.removeClass('selected');
       clone.attr('id',uuid);
+      clone.css('background','');
       clone.mouseenter(function(){markerSwap(this.id)});
+      clone.appendTo('.inner-results');
       panelHeight();
   });
 
