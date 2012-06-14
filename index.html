@@ -10,14 +10,17 @@
 	<link href="./includes/css/layout.css" media='screen' rel='stylesheet' type='text/css' /> 
 	<link href="./includes/css/effects.css" media='screen' rel='stylesheet' type='text/css' /> 
 	<link href="./includes/css/elements.css" media='screen' rel='stylesheet' type='text/css' /> 
+  <link href="./includes/css/ticker.css" rel="stylesheet" type="text/css" />
 
 <link href='http://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'/>
 <script src="http://cufon.shoqolate.com/js/cufon-yui.js" type="text/javascript"></script>
 <script src="./includes/js/chunkfive.cufonfonts.js" type="text/javascript"></script>
 <script src="./includes/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="./includes/js/jquery.ticker.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-Cufon.replace('.Xcufon', { fontFamily: 'ChunkFive-Roman', hover: true }); 
+Cufon.replace('.cufon', { fontFamily: 'ChunkFive-Roman', hover: true });
+Cufon.replace('.ticker-title', { fontFamily: 'ChunkFive-Roman', hover: true }); 
 </script>
 
 	
@@ -53,10 +56,9 @@ function googleTranslateElementInit() {
 </div>
 <!---->
 <div id="header-home" dir="null">
-  <div class="header-inner cufon" style="height:71px;line-height:71px;margin:16px auto;text-align:center;">  
-    <span style="text-decoration:none;color:#f7bc4e;-webkit-transform:rotate(-1deg);display:inline-block;margin-right:-8px;">Course</span>
-    <span class="emphasis" style="-webkit-transform:rotate(1deg);display:inline-block;;margin-right:-8px;">Finder</span>
-    <span class="/**/" style="margin-right:-8px;"><img src="images/marker40.png" width="28px" style="-webkit-transform:rotate(9deg)"/></span>
+  <div class="header-inner" style="height:71px;line-height:71px;margin:16px auto 0;text-align:center;">  
+	    <a href="index.html" style="color:#6c7bd0;" class="cufon">Course<span class="emphasis">Finders</span></a>
+      <img src="images/marker40.png" width="24px" style="-webkit-transform:rotate(11deg);"/>
   </div>
 </div>
 <div class="clear"></div>
@@ -107,19 +109,32 @@ function googleTranslateElementInit() {
 
     </div>
     <p>Welcome to <b>Ginger Juice</b>. We have one of the most comprehensive listings of langauge course. Browse courses, shortlist and apply all from one place!</p>
-    <strong>Your adventure begins <a href="search.html"> here</a></strong> 
-    <button class="add" style="font-size:1em;min-width:196px;">Get results...!</button>
+    <strong style="margin:8px 0;">Your adventure begins <a href="search.html"> here</a></strong> 
     </div>
   </div>
 
   <div class="clear"></div>
 
   <div class="homepage-infobox" style="min-height:32px;width:600px;margin:16px auto;text-align:center; color:silver;font-size:20px;">
-    <span class="info-header left cufon" style="color:#f7bc4e;">We're hot!</span><br/>
-  <p><b>Student Searches:</b> 2.3m | <b>Schools:</b> 14352 | <b>Courses:</b> 73522</p>
+
+    <span class="left">
+    <ul id="js-news" class="js-hidden">
+        <li class="news-item"><a href="#"><b>English</b> in Ramsgate, Kent England.</a></li>
+        <li class="news-item"><a href="#">English in Footscray, Victoria Australia.</a></li>
+        <li class="news-item"><a href="#">French in Madagascar</a></li>
+        <li class="news-item"><a href="#">Something pertinent.</a></li>
+    </ul>
+    </span>
 
 </div>
 
+  <div class="clear"></div>
+
+  <div class="homepage-infobox" style="min-height:32px;width:600px;margin:20px auto;text-align:left; color:silver;font-size:16px;padding-top:16px;">
+    <span class="cufon" style="color:#f7bc4e;font-size:20px;">We're hot!</span>
+  <b>  Student Searches:</b> 2.3m | <b>Schools:</b> 14352 | <b>Courses:</b> 73522
+
+</div>
 
   <div class="clear"></div>
 
@@ -251,7 +266,11 @@ function googleTranslateElementInit() {
 </body>
 
 
-
+<script type="text/javascript">
+    $(function () {
+        $('#js-news').ticker();
+    });
+</script>
 
 
 

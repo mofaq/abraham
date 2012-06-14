@@ -76,7 +76,7 @@ ol.inner-results{padding:0;list-style-type:lower-alpha;}
 
 b{color:silver;}
 
-button{font-size:12px;font-weight:bold;cursor:pointer;letter-spacing:-1px;text-transform:none;}
+button{font-size:12px;font-weight:bold;cursor:pointer;letter-spacing:-1px;text-transform:none;border-radius:3px; padding:4px;}
 
 button.country-in{height:28px;border:2px solid silver;margin:0 4px;padding:4px;border-radius:3px;width:28px;background-color:white;color:silver;font-weight:bold;}
 button.language-in{height:28px;border:2px solid silver;margin:0 4px;padding:4px;border-radius:3px;width:28px;background-color:white;color:silver;font-weight:bold;}
@@ -89,10 +89,10 @@ button.country-out{height:28px;border:2px solid white;margin:0 4px;padding:4px;b
 .country-out{color:silver;margin-right:8px;}
 .destination-out{color:silver;margin-right:8px;}
 
-button.panel-in{height:28px;border:2px solid silver;padding:4px;border-radius:3px;width:28px;background-color:white;color:silver;font-weight:bold;}
+button.panel-in{height:28px;border:2px solid silver;border-radius:3px;width:28px;background-color:white;color:silver;font-weight:bold;}
 button.panel-button{height:31px;border:2px solid white;background-color:silver;border-radius:6px;margin:0 4px 0 0;}
-button.panel-in2{height:40px;border:3px solid #e49501;margin:16px 12px;padding:4px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
-button.panel-in3{height:40px;border:3px solid #e49501;margin:16px 12px;padding:4px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
+button.panel-in2{height:40px;border:3px solid #e49501;margin:16px 12px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
+button.panel-in3{height:40px;border:3px solid #e49501;margin:16px 12px;border-radius:32px;width:40px;background-color:#fec65d;color:white;font-weight:bold;}
 
 button.search-button{height:40px;border:3px solid white;margin:16px 12px;padding:4px 16px;border-radius:24px;background-color:#e49501;color:white;font-weight:bold;}
 
