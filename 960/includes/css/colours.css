@@ -114,17 +114,7 @@ border-bottom:1px solid white;
 }
 
 
-#left-sidebar1{
-background: #ffffff;
-background-color:#ffffff;
-background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* IE10+ */
-background: linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( endColorstr='#ffffff', startColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
-}
+
 
 .sidebar-header{
 
