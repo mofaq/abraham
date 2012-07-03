@@ -1,43 +1,74 @@
-/* 
-Primary Interface Colours: 
-
-Primary Blue : #
-Primary Blue 50% :   ( Better option as the primary is quite dark )
-Secondary Blue : 
-Orange :
-
-*/
-
-
 
 html {font-family:arial,sans-serif;height:100%;width:100%;overflow:hidden;}
-body {color:#111111;}
+body {color:#333333;}
 
-a{color:#6C7BD0;}
+a{color:#6C7BD0;text-decoration:none;}
 b{color:silver;}
+hr{border:0;border-top:1px solid gainsboro;margin:4px 0;}
+
+blockquote{background-image:url('../../images/quotemark.png');background-repeat:no-repeat;background-color:#efefef; border:1px solid gainsboro;}
+blockquote .upload{background-image:none;background-repeat:no-repeat;background-color:#efefef; border:1px solid gainsboro;}
+blockquote b{color:#6C7BD0;font-size:80%;}
+
 
 .action a{font-weight:bold;color:#6C7BD0;}
-.tiny{color:#d2d2d2;font-size:11px;font-weight:bold;float:right;}
 
-#header .button{height:40px;border:3px solid white;margin:16px 12px;padding:4px 16px;border-radius:8px;background-color:#fec65d;color:white;font-weight:bold;}
+.tiny{color:#c2c2c2;font-size:11px;font-weight:bold;float:right;}
+.tiny-uc{color:#c2c2c2;font-size:11px;font-weight:bold;text-transform:uppercase;}
+
+.white-arrow-left{border-right:7px solid white;border-top:7px solid transparent;border-bottom:7px solid transparent;}
+.sidebar-button .white-arrow-left{border-right:5px solid white;border-top:5px solid transparent;border-bottom:5px solid transparent;margin:6px 0;}
+.white-arrow-right{}
+.blue-arrow-right{border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #6c7bd0;margin-top:4px;}
+
+#header .button{height:40px;border:2px solid white;margin:16px 12px;padding:4px 16px;border-radius:4px;background-color:#fec65d;color:white;font-weight:bold;text-shadow: -1px -1px 1px #fed486,1px 1px 1px #e5b354;}
+
+#content{background-color:#efefef;}
+
+blockquote{background-image:url('../../images/quotemark.png');background-repeat:no-repeat;background-color:#efefef; border:1px solid gainsboro;}
+blockquote b{color:#6C7BD0;font-size:80%;}
+
+#content-container{background-color:#fefefe;border:1px solid #dcdcdc;}
+
+#profile{}
+.profile-header{color:#111111;border-bottom:1px solid gainsboro;}
+
+.map-extract{background-image:url('../../images/sample-map.png');background-repeat:no-repeat;background-position:center;background-color:#efefef;border:1px solid gainsboro}
+
+.profile-box{border-bottom:1px solid gainsboro;}
+
+
+#ratings-summary .percentage{color:#e5b354;}
+.ratings-bar-label{color:#e5b354;font-size:11px;font-weight:bold;text-transform:uppercase;float:left;}
+.ratings-bar-inner{background-color:#6c7BD0;}
+.ratings-bar-outer{background-color:gainsboro;}
+
+
 #map{-webkit-box-shadow:3px 2px 16px #bdbdbd inset;box-shadow:3px 2px 16px #bdbdbd inset;}
 
-#left-sidebar1{background-color:#fefefe;border-right:1px solid white;/*-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);*/}
-
-#left-sidebar2{background-color:#fefefe;border-right:1px solid white;/*-webkit-box-shadow:0 3px 6px #bdbdbd;box-shadow:0 3px 6px #bdbdbd;behavior: url(includes/css/PIE.htc);*/}
+.thumbnail{background-color:white;border:1px solid white;}
 
 
-.sidebar-header{color:#111111;border-bottom:1px solid gainsboro;}
-.sidebar-container{padding:12px 0;margin:0;background:white;}
+#left-sidebar1{background-color:#fefefe;border-right:1px solid white;}
+#left-sidebar2{background-color:#fefefe;border-right:1px solid white;}
+
+.content-header{color:#312121;border-bottom:1px solid gainsboro;}
+
+#sidebar{}
+#sidebar .header{color:#111111;}
+#sidebar .content{border:1px solid #dcdcdc;background-color:#efefef;}
 
 .sidebar-navigation{color:#222222;}
 
 .sidebar1-header li:hover{cursor:pointer;background-color:#ededed;}
 
+#scrollbar0 .track {}
 
+#scrollbar0 .thumb {background-color:#dcdcdc;}
 #scrollbar1 .thumb {background-color:#dcdcdc;}
 #scrollbar2 .thumb {background-color:#dcdcdc;}
 
+#scrollbar0 .thumb:hover {background-color:#fedfa4;}
 #scrollbar1 .thumb:hover {background-color:#fedfa4;}
 #scrollbar2 .thumb:hover {background-color:#fedfa4;}
 
@@ -50,7 +81,7 @@ a.add{color:white;text-decoration:none;}
 
 .add{
 color:white;
-text-shadow: -1px -1px 1px #6C7BD0,1px 1px 1px #242495;
+text-shadow: -1px -1px 1px #6C7BD0; /*,1px 1px 1px #242495;*/
 background: #6C7BD0;
 background: -moz-linear-gradient(top, #6C7BD0 0%, #4355bc 51%, #4355bc 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6C7BD0), color-stop(49%,#4355bc), color-stop(51%,#6C7BD0), color-stop(100%,#828ed7));
@@ -60,6 +91,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6C7BD0', end
 cursor: pointer;
 -webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
 -moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+border:2px solid white;
+border-radius:4px;
 }
 
 .remove{
@@ -114,7 +147,19 @@ border-bottom:1px solid white;
 }
 
 
+.content-header{
 
+border-top:0;
+background: #ffffff;
+background-color:#ffffff;
+background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* IE10+ */
+background: linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( endColorstr='#ffffff', startColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+}
 
 .sidebar-header{
 
@@ -145,7 +190,13 @@ background: linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( endColorstr='#ffffff', startColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
 }
 
+.profile-action-bar{
+color:white;
+text-shadow: -1px -1px 1px #6C7BD0,1px 1px 1px #242495;
+background: #4355bc;
+cursor: pointer;
 
+}
 
 
 .button-shadow{
@@ -157,6 +208,81 @@ cursor: pointer;
 -webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
 -moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
 }
+
+.box-shadow{
+
+-webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+-moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+}
+
+
+
+/*tabs*/
+
+.tab-content{border-top:1px solid gainsboro}
+
+
+ul.tabs {
+    list-style: none;
+    padding:0;
+    margin:4px 0;
+}
+
+ul.tabs li {
+    display: inline;
+
+}
+
+ul.tabs li a {
+    padding: 3px 5px;
+    background-color: #ccc;
+    font-weight:bold;
+    font-size:90%;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+    -moz-box-shadow: 1px 1px 3px #dddddd, -1px -1px 3px #dddddd;
+    background: -moz-linear-gradient(top, #6C7BD0 0%, #4355bc 51%, #4355bc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6C7BD0), color-stop(49%,#4355bc), color-stop(51%,#6C7BD0), color-stop(100%,#828ed7));
+    background: -webkit-linear-gradient(top, #ededed 0%,#dcdcdc 51%,#dcdcdc 100%);
+    background: linear-gradient(top, #6C7BD0 0%,#4355bc 50%,#242495 60%,#6C7BD0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6C7BD0', endColorstr='#6C7BD0',GradientType=0 );
+    cursor: pointer;
+
+    border:2px solid white;
+    border-radius:4px;
+
+
+}
+
+ul.tabs li a.selected,
+ul.tabs li a:hover {
+    background-color: #333;
+    color: #fff;
+
+}
+
+ul.tabs li a:focus {
+	outline: 0;
+}
+
+div.tab-container > div {
+	padding: 5px;
+	margin-top: 3px;
+	border: 5px solid white;
+}
+
+div.tab-container > div h2 {
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 

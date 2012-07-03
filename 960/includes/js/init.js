@@ -1,8 +1,21 @@
 
 jQuery.event.add(window, "load", initPanels);
-jQuery.event.add(window, "load", googleTranslateElementInit);
+//jQuery.event.add(window, "load", googleTranslateElementInit);
 
 jQuery.event.add(window, "resize", initPanels);
+
+$(function () {
+	var tabContainers = $('div.tab-container > div');
+	tabContainers.hide().filter(':first').show();
+	
+	$('div.tab-container ul.tabs a').click(function () {
+		tabContainers.hide();
+		tabContainers.filter(this.hash).show();
+		$('div.tab-container ul.tabs a').removeClass('selected');
+		$(this).addClass('selected');
+		return false;
+	}).filter(':first').click();
+});
 
 
 $(document).ready(function() {
@@ -36,7 +49,8 @@ $(document).ready(function() {
 
 function initPanels()
 {
-	var hh = 109
+	var hh = 109 //height of header
+  var chh = (276) //height of content header with padding
 	var wh = $(window).height();
 	var ww = $(window).width();
 
@@ -44,20 +58,34 @@ function initPanels()
 	//$("#content").css('height',ph);
 
 
-	$("#sidebar").css('height',ch);
+	$("#content").css('height',ch);
+
 	$("#left-sidebar1").css('height',ch);
 	$("#left-sidebar2").css('height',ch);
+
+  //$("#profile").css('height',(ch-chh))
+  $("#sidebar .content").css('height',(ch-chh))
 
 	$("#map").css('height',ch);
 	$("#map").css('width',(ww-381-256-2));
 
-	var pch = (ch-90)
+	var pch = (ch-84)
+  var profileBoxHeight = 200
+
+	$("#content-container").css('height',pch);
 
 	$(".sidebar-container").css('height',pch);
 	$(".viewport").css('height',(pch));
 
+	$("#scrollbar0.viewport").css('height',(pch-144));
+
+  $('#scrollbar0').tinyscrollbar({ size: (pch+8) });
+
   $('#scrollbar1').tinyscrollbar({ size: pch });
   $('#scrollbar2').tinyscrollbar({ size: pch });
+
+  $('#profile-scrollbar').tinyscrollbar({ size: pch });
+
 
   $("#option-selection").hide();
 
@@ -65,10 +93,15 @@ function initPanels()
 
 //Fadeout the backgrounds on hover
 
-
+/*
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE
   }, 'google_translate_element');
 }
+
+*/
+
+
+

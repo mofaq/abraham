@@ -3,22 +3,79 @@ html {height:100%;width:100%;overflow:hidden;}
 body {margin:0; padding:0;}
 
 #header{width:100%;height:72px;overflow:hidden;}
-#header-inner-right{width:50%;margin:0 16px 0 0; text-align:right;}
-#header-inner-left{margin:0 0 0 24px}
 
 .logo{margin-top:20px;}
-
-.header-inner{line-height:64px;}
+.header-inner{line-height:64px;margin:0 16px 0 24px}
 .header-inner a{line-height:72px;text-decoration:none;}
 
-.login{font-size:20px;}
 
-#content{overflow:hidden;height:100%;}
+
+#content{overflow:hidden;height:100%;width:100%;}
 #container{width:100%;}
 #language-selection{width:256px;}
 #option-selection{width:256px;}
 #map{position:absolute;z-index:0;margin-left:637px;}
 #map{height:100%;}
+
+
+/* Profile Page Styles */
+
+#content-container{margin:8px auto 4px 96px;width:960px;border-radius:4px;height:100%;padding-top:8px;}
+
+#profile{font-size:12px;width:640px;}
+
+.profile-box{margin:16px;min-height:156px;width:100%;}
+.profile-logo-box{margin:-16px 0 0 0;}
+.profile-logo-box img{padding:8px;}
+
+.profile-header{height:80px;margin:16px 16px 8px 16px;}
+.profile-header .org{font-size:20px;font-weight:bold;}
+
+.profile-header .tiny-uc{width:88px;}
+.profile-header .marker{margin-right:8px;}
+
+#social-plugins{margin-top:4px;}
+
+.profile-content .options-box{margin-top:8px;border:1px solid gainsboro;padding: 4px;height:16px;width:128px;}
+
+
+
+#sidebar{font-size:12px;min-width:256px;border-radius:4px;}
+#sidebar .header .map-extract{width:240px;height:80px;}
+#sidebar .header .map-extract{padding:8px;}
+#sidebar .header img{max-width:240px;max-height:64px;padding:8px;}
+
+#sidebar .content{margin:8px 0 4px 0;min-width:256px;overflow:hidden;}
+#sidebar .content img{max-width:240px;max-height:240px;padding:8px 8px 0;}
+
+#sidebar .footer{border:1px solid #cdcdcd;border-radius:4px;margin-top:8px;height:40px;}
+
+#ratings-summary{width:256px;margin:0 0 16px 16px;}
+#ratings-summary .percentage{font-size:20px;font-weight:bold;}
+
+#ratings-box{margin:8px 0;}
+.ratings-bar-container{height:14px;margin:1px;line-height:14px;}
+.ratings-bar-inner{height:10px;border-radius:2px;}
+.ratings-bar-outer{height:10px;width:172px;padding:2px}
+
+.review-button{width:178px;text-align:center;font-family:arial;font-size:13px;font-weight:bold;cursor:pointer;letter-spacing:-1px;text-transform:none;border-radius:3px;height:24px;min-width:96px;line-height:24px;padding:2px 4px;margin:4px 4px 4px 0}
+
+blockquote{min-height:32px;overflow:hidden;padding:8px 24px 8px 36px;border-radius:4px;margin:0 0 8px 0;}
+
+
+#mini-map{margin:8px 0 4px 12px;padding:8px;border-radius:4px;}
+
+.tab-container{padding:0 16px;}
+/*.tab-content{padding:0; margin:0;}*/
+
+.tabs{height:32px;line-height:32px;}
+
+#image-carousel img{padding:4px;}
+
+.thumbnail{height:56px;width:56px;padding:0 8px 0 0;}
+
+
+/* Search Page Styles */
 
 
 #left-sidebar1{float:left;position:absolute;width:381px;z-index:99;}
@@ -31,6 +88,7 @@ body {margin:0; padding:0;}
 .sidebar1-header ul{padding:0;list-style-type:none;}
 .sidebar1-header li{height:32px;line-height:32px;padding:0 8px 0 24px;margin:0}
 
+.content-header{font-weight:bold;padding:8px 0 0 24px; height:49px;min-width:222px;line-height:49px;}
 
 .sidebar-header{padding:4px 0 4px 24px; height:49px;min-width:222px;line-height:49px;}
 .sidebar-container{padding:12px 0;margin:0;}
@@ -103,6 +161,19 @@ button{font-family:arial;font-size:12px;font-weight:bold;cursor:pointer;letter-s
 
 
 /* Tiny Scrollbar */
+#scrollbar0 {margin:0; }
+#scrollbar0 .viewport {overflow: hidden; position: relative; }
+#scrollbar0 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar0 .scrollbar{ position: relative; width: 16px; margin:0 0 0 16px;  }
+#scrollbar0 .track {height: 100%; width:16px; position: relative; padding: 0; }
+#scrollbar0 .thumb {border-radius:8px 0 0 8px; height: 16px; width: 16px; cursor: move; overflow: hidden; position: absolute; top: 0; left: 0; }
+
+#scrollbar0 .thumb .end { overflow: hidden; height: 1px; width: 16px; }
+#scrollbar0 .disable { display: none; }
+
+
+
+
 #scrollbar1 {margin:0; }
 #scrollbar1 .viewport {overflow: hidden; position: relative; }
 #scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
@@ -128,7 +199,7 @@ button{font-family:arial;font-size:12px;font-weight:bold;cursor:pointer;letter-s
 
 .left{float:left;}
 .right{float:right;}
-.clear{clear:both}
+.clear-both{clear:both}
 .hidden{display:none;}
 
 .white{color:white}
